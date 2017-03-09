@@ -1,0 +1,74 @@
+Last login: Tue Mar  7 18:47:34 on ttys000
+Ryan-Rivards-iMac-Computer:~ ryanrivard$ Ls
+Applications
+Creative Cloud Files
+Desktop
+Documents
+Downloads
+Dropbox
+Google Drive
+Incompatible Software
+Library
+Movies
+Music
+Pictures
+Public
+Sites
+The Heart of Entrepreneurialship0001.webarchive
+VIDEO_TS.BUP
+nano.save
+ryan@bespokenmanagement.com Creative Cloud Files
+Ryan-Rivards-iMac-Computer:~ ryanrivard$ cd desktop/
+Ryan-Rivards-iMac-Computer:desktop ryanrivard$ cd DojoAssignments
+-bash: cd: DojoAssignments: No such file or directory
+Ryan-Rivards-iMac-Computer:desktop ryanrivard$ mkdir DojoAssignments
+Ryan-Rivards-iMac-Computer:desktop ryanrivard$ cd DojoAssignments
+Ryan-Rivards-iMac-Computer:DojoAssignments ryanrivard$ mkdir WebFundamentals Python Mean Ruby iOS netCore
+Ryan-Rivards-iMac-Computer:DojoAssignments ryanrivard$ cd WebFundamentals
+Ryan-Rivards-iMac-Computer:WebFundamentals ryanrivard$ mkdir about.txt
+Ryan-Rivards-iMac-Computer:WebFundamentals ryanrivard$ cd ..
+Ryan-Rivards-iMac-Computer:DojoAssignments ryanrivard$ cd Python
+Ryan-Rivards-iMac-Computer:Python ryanrivard$ mkdir about.txt
+Ryan-Rivards-iMac-Computer:Python ryanrivard$ cd ..
+Ryan-Rivards-iMac-Computer:DojoAssignments ryanrivard$ cd Mean
+Ryan-Rivards-iMac-Computer:Mean ryanrivard$ mkdir about.txt
+Ryan-Rivards-iMac-Computer:Mean ryanrivard$ cd ..
+Ryan-Rivards-iMac-Computer:DojoAssignments ryanrivard$ cd netCore
+Ryan-Rivards-iMac-Computer:netCore ryanrivard$ mkdir about.txt
+Ryan-Rivards-iMac-Computer:netCore ryanrivard$ cd ..
+Ryan-Rivards-iMac-Computer:DojoAssignments ryanrivard$ cd Ruby
+Ryan-Rivards-iMac-Computer:Ruby ryanrivard$ mkdir about.txt
+Ryan-Rivards-iMac-Computer:Ruby ryanrivard$ cd ..
+Ryan-Rivards-iMac-Computer:DojoAssignments ryanrivard$ cd iOS
+Ryan-Rivards-iMac-Computer:iOS ryanrivard$ mkdir about.txt
+Ryan-Rivards-iMac-Computer:iOS ryanrivard$ cd ..
+Ryan-Rivards-iMac-Computer:DojoAssignments ryanrivard$ cd WebFundamentals
+Ryan-Rivards-iMac-Computer:WebFundamentals ryanrivard$ mkdir Git HTML CSS Javascript
+Ryan-Rivards-iMac-Computer:WebFundamentals ryanrivard$ cd Git
+Ryan-Rivards-iMac-Computer:Git ryanrivard$ mkdir about.txt
+Ryan-Rivards-iMac-Computer:Git ryanrivard$ cd HTML
+-bash: cd: HTML: No such file or directory
+Ryan-Rivards-iMac-Computer:Git ryanrivard$ cd ..
+Ryan-Rivards-iMac-Computer:WebFundamentals ryanrivard$ cd HTML
+Ryan-Rivards-iMac-Computer:HTML ryanrivard$ mkdir about.txt
+Ryan-Rivards-iMac-Computer:HTML ryanrivard$ cd ..
+Ryan-Rivards-iMac-Computer:WebFundamentals ryanrivard$ cd CSS
+Ryan-Rivards-iMac-Computer:CSS ryanrivard$ mkdir about.txt
+Ryan-Rivards-iMac-Computer:CSS ryanrivard$ cd ..
+Ryan-Rivards-iMac-Computer:WebFundamentals ryanrivard$ cd Javascript
+Ryan-Rivards-iMac-Computer:Javascript ryanrivard$ mkdir about.txt
+Ryan-Rivards-iMac-Computer:Javascript ryanrivard$ cd ..
+Ryan-Rivards-iMac-Computer:WebFundamentals ryanrivard$ cd HTML
+Ryan-Rivards-iMac-Computer:HTML ryanrivard$ mkdir indentation.html
+Ryan-Rivards-iMac-Computer:HTML ryanrivard$ Ls -R
+about.txt		indentation.html
+
+./about.txt:
+
+./indentation.html:
+Ryan-Rivards-iMac-Computer:HTML ryanrivard$ cd..
+-bash: cd..: command not found
+Ryan-Rivards-iMac-Computer:HTML ryanrivard$ cd ..
+Ryan-Rivards-iMac-Computer:WebFundamentals ryanrivard$ cd ..
+Ryan-Rivards-iMac-Computer:DojoAssignments ryanrivard$ mkdir assignments.txt
+Ryan-Rivards-iMac-Computer:DojoAssignments ryanrivard$ 
