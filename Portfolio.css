@@ -1,0 +1,150 @@
+/*CSS reset settings here*/
+{
+ margin: 0px;
+ padding: 0px;
+}
+header {
+  width: 970px;
+  background-color: #fffeff;
+  font-family: "Comic Sans MS";
+  padding: 15px;
+}
+header h1{
+ display: inline;
+ margin-bottom: 20px;
+ margin-left: 15px;
+ font-family: "Comic Sans MS";
+ color: black;
+}
+header h4{
+  display: inline;
+  font-family: sans-serif;
+  float: right;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  color: black;
+}
+main{
+   background: radial-gradient(circle, #6f5964, #241318);
+   background-color: #16060a;
+   width: 950px;
+   height: 891px;
+   padding-top: 15px;
+   padding-left: 25px;
+   margin-left: 25px;
+}
+a{
+  color:black;
+}
+#profile-pic{
+  display: inline-block;
+  border: 5px solid #94939e;
+  margin: 15px, 15px, 15px, 25px;
+}
+#aboutMe{
+   background-color: white;
+   display: inline-block;
+   width: 482px;
+   height: 284px;
+   text-align: left;
+   font-family: sans-serif;
+   font-size: 12pt;
+   margin-left: 15px;
+   vertical-align: top;
+   /*margin-bottom: 15px;*/
+   background: linear-gradient(90deg, #fffeff, #d8cbd9);
+ }
+ .subheading-gradient{
+   background: linear-gradient(#fffeff, #d8cbd9, #fffeff);
+   padding: 10px;
+   display: block;
+   vertical-align: top;
+ }
+ .aboutMe-text{
+  padding: 10px, 10px, 7px, 10px;
+  display: inline;
+}
+#aboutMe-link{
+  font-family: sans-serif;
+}
+.featured-work-wrapper{
+  background: linear-gradient(90deg, #fffeff, #d8cbd9);
+  display: inline-block;
+  width: 289px;
+  height: 552px;
+  margin-left: 2px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  vertical-align: top;
+}
+featured-work-image{
+  display: inline-block;
+  width: 289px;
+  height: 148px;
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+#lamode-text{
+  padding: 5px, 10px, 5px, 10px;
+  display: inline;
+  text-align: left;
+  font-size: 10pt;
+}
+#family-text{
+  padding: 5px, 10px, 5px, 10px;
+  display: inline;
+  text-align: left;
+  font-size: 10pt;
+}
+#fiveEleven-text{
+  padding: 5px, 10px, 5px, 10px;
+  display: inline;
+  text-align: left;
+  font-size: 10pt;
+}
+h3{
+  display: inline;
+  font-family: sans-serif;
+  /*padding: 15px 5px 25px 25px;*/
+  color: white;
+}
+.technologies-icon{
+  display: inline;
+  /*padding: 5px;*/
+  margin-left: 5px;
+  margin-right: 5px;
+  vertical-align: middle;
+  /*margin-bottom: 35px;*/
+}
+.green-button{
+   background-color: #4CAF50; /* Green */
+   border-radius: 6px;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+   color: white;
+   padding: 25px, 10px;
+   margin: auto;
+   text-align: center;
+   text-decoration: none;
+   display: block;
+   font-size: 10px;
+}
+footer{
+ height: 150px;
+ width: 970px;
+ background-color: white;
+ display: inline-block;
+}
+.footer-contacts{
+ text-align: center;
+ background-color: white;
+ margin-bottom: 25px;
+ margin-top: 15px;
+ font-family: sans-serif;
+}
+.footer-social{
+ text-align: center;
+ font-style: italic;
+ background-color: white;
+ margin-bottom: 25px;
+ font-family: sans-serif;
+}
