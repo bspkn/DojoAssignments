@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Disappearing Image</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+               $(".restore-button").click(function(){
+                  $( "img" ).fadeIn( "slow", function() {
+                });
+            });
+              $("#image1").click(function(){
+                  $( "#image1" ).fadeOut( "slow", function() {
+                });
+            });
+              $("#image2").click(function(){
+                  $( "#image2" ).fadeOut( "slow", function() {
+                });
+            });
+              $("#image3").click(function(){
+                  $( "#image3" ).fadeOut( "slow", function() {
+                });
+            });
+              $("#image4").click(function(){
+                  $( "#image4" ).fadeOut( "slow", function() {
+                });
+            });
+              $("#image5").click(function(){
+                  $( "#image5" ).fadeOut( "slow", function() {
+                });
+            });
+              $("#image6").click(function(){
+                  $( "#image6" ).fadeOut( "slow", function() {
+                });
+            });
+              $("#image7").click(function(){
+                  $( "#image7" ).fadeOut( "slow", function() {
+                });
+            });
+              $("#image8").click(function(){
+                  $( "#image8" ).fadeOut( "slow", function() {
+                });
+            });
+              $("#image9").click(function(){
+                  $( "#image9" ).fadeOut( "slow", function() {
+                });
+            });
+        });
+    </script>
+  </head>
+    <body>
+    <h2>Disappearing Images</h2>
+          <p>Hide Me By Clicking an Image!</p>
+            <img id="image1" src="file:///Users/ryanrivard/Desktop/DojoAssignments/WebFundamentals/Python/python.png" style="width:350px; height:auto;"></img>
+             <img id="image2" src="file:///Users/ryanrivard/Desktop/DojoAssignments/WebFundamentals/Python/python.png" style="width:350px; height:auto;"></img>
+             <img id="image3" src="file:///Users/ryanrivard/Desktop/DojoAssignments/WebFundamentals/Python/python.png" style="width:350px; height:auto;"></img>
+             <img id="image4" src="file:///Users/ryanrivard/Desktop/DojoAssignments/WebFundamentals/Python/python.png" style="width:350px; height:auto;"></img>
+             <img id="image5" src="file:///Users/ryanrivard/Desktop/DojoAssignments/WebFundamentals/Python/python.png" style="width:350px; height:auto;"></img>
+             <img id="image6" src="file:///Users/ryanrivard/Desktop/DojoAssignments/WebFundamentals/Python/python.png" style="width:350px; height:auto;"></img>
+             <img id="image7" src="file:///Users/ryanrivard/Desktop/DojoAssignments/WebFundamentals/Python/python.png" style="width:350px; height:auto;"></img>
+             <img id="image8" src="file:///Users/ryanrivard/Desktop/DojoAssignments/WebFundamentals/Python/python.png" style="width:350px; height:auto;"></img>
+             <img id="image9" src="file:///Users/ryanrivard/Desktop/DojoAssignments/WebFundamentals/Python/python.png" style="width:350px; height:auto;"></img>
+           <hr id="blue-line-left" class="blue-lines">
+          <p id="restore">Restore</p>
+        <button class="restore-button"><strong>Restore</strong></button>
+    </body>
+</html>

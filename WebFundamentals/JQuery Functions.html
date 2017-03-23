@@ -1,0 +1,151 @@
+<!-- /* JQuery Functions*/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Testing JQuery</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".hide-button").click(function(){
+                $("p").hide();
+            })
+            $(".show-button").click(function(){
+                $("p").show();
+            })
+            $(".toggle-button").click(function(){
+                $("h1").toggle();
+            })
+             $(".slide-down-button").click(function(){
+                  $( "img" ).slideDown( "slow", function() {
+    // Animation complete.
+                });
+            });
+             $(".slide-up-button").click(function(){
+                  $( "img" ).slideUp( "slow", function() {
+                });
+            });
+              $(".slide-toggle-button").click(function(){
+                  $( "img" ).slideToggle( "slow", function() {
+                });
+            });
+               $(".fade-in-button").click(function(){
+                  $( "img" ).fadeIn( "slow", function() {
+                });
+            });
+              $(".fade-out-button").click(function(){
+                  $( "img" ).fadeOut( "slow", function() {
+                });
+            });
+              $(".add-class-button").click(function(){
+                $( ".myclass.otherclass" ).css( "border", "13px solid red" );
+            });  
+              $(".before-button").click(function(){
+                $( "p" ).before( "<b>Hello</b>" );
+            });
+              $(".after-button").click(function(){
+                $( "p" ).after( "<b>Boom!</b>" );
+            });
+              $(".html-button").click(function(){
+                $( "p" ).html( "<p>All new content. <em>You bet!</em></p>" );
+            });
+              $(".append-button").click(function(){
+                $( "p" ).append( document.createTextNode( "Crazy!" ) );
+            });
+              $(".attr-button").click(function(){
+              $("img").attr( "title", "Python"); //If you hover over the image it will show title... works.//
+            });
+              $( "input" ).keyup(function() {
+                var value = $( this ).val();
+                    $( "p" ).text( value );
+                });
+                // .keyup();
+              $(".text-button").click(function(){
+                $("p").text( "ALL new text." );
+            });
+            $(".data-button").click(function(){
+               $( "body" ).data( "name", "yourname" );
+                    alert( $( "body" ).data( "name" ) );
+            });
+        });
+    </script>
+  </head>
+  <body>
+    <h2>Test Run</h2>
+    <p>Hide Me</p>
+    <button class="hide-button"><strong>Hide</strong></button>
+    <hr id="blue-line-left" class="blue-lines">
+
+    <p id="show">Show Me</p>
+    <button class="show-button"><strong>Show</strong></button>
+    <p style="display: none">What Up!?</p>
+    <hr id="blue-line-left" class="blue-lines">
+
+    <p id="toggle">Toggle Me</p>
+    <button class="toggle-button"><strong>Toggle</strong></button>
+    <h1 style="display: none">What Up!?</h1>
+    <hr id="blue-line-left" class="blue-lines">
+
+    <p id="slide_down">Slide Down</p>
+    <button class="slide-down-button"><strong>Slide Down</strong></button>
+    <img src="file:///Users/ryanrivard/Desktop/DojoAssignments/WebFundamentals/Python/python.png" style="display: none"></img>
+    <hr id="blue-line-left" class="blue-lines">
+
+    <p id="slide_up">Slide Up</p>
+    <button class="slide-up-button"><strong>Slide Up</strong></button>
+    <hr id="blue-line-left" class="blue-lines">
+
+    <p id="slide_toggle">Slide Toggle</p>
+    <button class="slide-toggle-button"><strong>Slide Toggle</strong></button>
+    <hr id="blue-line-left" class="blue-lines">
+
+    <p id="fade_in">Fade In</p>
+    <button class="fade-in-button"><strong>Fade In</strong></button>
+    <hr id="blue-line-left" class="blue-lines">
+
+    <p id="fade_out">Fade Out</p>
+    <button class="fade-out-button"><strong>Fade Out</strong></button>
+    <hr id="blue-line-left" class="blue-lines">
+
+    <p>Add Class</p>
+    <button class="add-class-button"><strong>Add Class</strong></button>
+    <div class="myclass">div class="notMe"</div>
+    <div class="myclass otherclass">div class="myClass"</div>
+    <span class="myclass otherclass">span class="myClass"</span>
+    <hr id="blue-line-left" class="blue-lines">
+
+    <p id="before">Before</p>
+    <button class="before-button"><strong>Before</strong></button>
+    <hr id="blue-line-left" class="blue-lines">
+
+    <p id="after">After</p>
+    <button class="after-button"><strong>After</strong></button>
+    <hr id="blue-line-left" class="blue-lines">
+
+    <p id="append">Append</p>
+    <button class="append-button"><strong>Append</strong></button>
+    <hr id="blue-line-left" class="blue-lines">
+
+    <p id="html">html</p>
+    <button class="html-button"><strong>HTML</strong></button>
+    <hr id="blue-line-left" class="blue-lines">
+
+    <p id="attr">attr</p>
+    <button class="attr-button"><strong>Attr</strong></button>
+    <hr id="blue-line-left" class="blue-lines">
+
+    <p id="val">val</p>
+    <button class="val-button"><strong>Val</strong></button>
+    <input type="text" value="So Many Choices...Choose Wisely!">
+    <hr id="blue-line-left" class="blue-lines">
+
+    <p id="text">text</p>
+    <button class="text-button"><strong>Text</strong></button>
+    <hr id="blue-line-left" class="blue-lines">
+
+    <p id="data">data</p>
+    <button class="data-button"><strong>Data</strong></button>
+    <hr id="blue-line-left" class="blue-lines">
+  </body>
+</html>
