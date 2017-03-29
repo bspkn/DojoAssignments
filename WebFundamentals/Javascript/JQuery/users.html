@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Users</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        console.log("you got this working");
+        $('form').submit(function(e){
+        e.preventDefault();
+          /*form info*/
+        var first = $("input[name=first]").val();
+        $("input[name=first]").val("");
+        var last = $("input[name=last]").val();
+        $("input[name=last]").val("");
+        var email = $("input[name=email]").val();
+        $("input[name=email]").val();
+        var tel = $("input[name=usrtel]").val();
+        $("input[name=usrtel]").val();
+        var newUser = '<div class="user-card"><h3>'+first+' '+last+'</h3><p style="display:none"><p>'+email+' '+tel+'</p></div>';
+        console.log(newUser);
+        $('#cardbox').append(newUser);
+
+        });
+
+      });
+      </script>
+  </head>
+  <body>
+    <container>
+        <form class="" action="index.html" method="post">
+          <label for="first">First Name:</label>
+          <input type="text" name="first" placeholder="First Name">
+          <label for="last">Last Name:</label>
+          <input type="text" name="last" placeholder="Last Name">
+          <label for="email">Email:</label>
+          <input type="email" name="email" placeholder="Email">
+          <label for="tel">Phone#:</label>
+          <input type="tel" name="usrtel" placeholder="Number">
+          <input type="submit" name="" value="Add User">
+        </form>
+      </div>
+      <div id="cardbox">
+        <div class="user-card">
+          <h3>Ryan Rivard</h3>
+          <p>email@email.com</p>
+          <p>Phone#</p>
+      </div>
+     </div>
+  </body>
+</html>

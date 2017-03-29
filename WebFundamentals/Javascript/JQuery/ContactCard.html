@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Card</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        console.log("you got this working");
+        $('form').submit(function(e){
+        e.preventDefault();
+          /*form info*/
+        var first = $("input[name=first]").val();
+        $("input[name=first]").val("");
+        var last = $("input[name=last]").val();
+        $("input[name=last]").val("");
+        var description = $("textarea").val();
+        $('textarea').val("");
+        var newCard = '<div class="contact-card"><h3>'+first+''+last+'</h3><p>Click Here</p><p style="display:none"><p>'+description+'</p></div>';
+        console.log(newCard);
+        $('#cardbox').prepend(newCard);
+
+      });
+
+        $(document).on('click', '.contact-card h3+p', function(){
+          $(this).toggle();
+          $(this).next().toggle();
+        })
+
+      });
+      </script>
+  </head>
+  <body>
+    <container>
+        <form class="" action="index.html" method="post">
+          <label for="first">First Name:</label>
+          <input type="text" name="first" placeholder="First Name">
+          <label for="last">Last Name:</label>
+          <input type="text" name="last" placeholder="Last Name">
+          <label for="description">Description:</label>
+          <textarea name="description" placeholder="Please Describe"></textarea>
+          <input type="submit" name="" value="Add User">
+        </form>
+      </div>
+      <div id="cardbox">
+        <div class="contact-card">
+          <h3>Ryan Rivard</h3>
+          <p>Click here for description</p>
+          <p> Learning to Code</p>
+      </div>
+     </div>
+  </body>
+</html>

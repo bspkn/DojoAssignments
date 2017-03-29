@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Card</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        console.log("you got this working");
+        $('form').submit(function(e){
+        e.preventDefault();
+        console.log("did the stuff");
+        var name = $("#theinput").val();
+        $.get("https://api.github.com/users/" +name, function(result){
+          console.log(result);
+          var user = {
+            name: result["name"],
+            bio: result.bio,
+            email: result.email
+          }
+          console.log(user);
+          $("#cardbox").append("<div><h4>" +user.name+ "</h4><h4>" +user.bio+ "</h4><h4>" +user.email+ "</h4></div>");
+
+        // var user ={}; --- > No longer needed
+        // user.name = $("#theinput").val();
+        // user.bio = "does stuff!";
+        // user.email = "email@email.place";
+
+        }, "json");
+
+        $("#theinput").val("");
+        })
+      });
+      </script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="getstuff">
+        <form id="post">
+          <input type="text" id="theinput" value="bspkn">
+          <input type="text" id="theinput" value="email">
+          <input type="submit" value="pushtogetinfo">
+        </form>
+      </div>
+      <div id="cardbox">
+        <div>
+          <h4>Contact Card</h4>
+          <h4>Enter Your Git Hub Name</h4>
+      </div>
+     </div>
+    </div>
+  </body>
+</html>

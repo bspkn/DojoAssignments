@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ninja Cat</title>
+    <link rel="stylesheet" type="text/css" href="NinjaCat.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+          $("img").click(function(){
+           var cat = $(this).attr("data-alt-src");
+           var temp = $(this).attr("src");
+           $(this).attr("src", cat);
+           $(this).attr("data-alt-src", temp);
+        });
+        $("img").hover(function(){
+          $(this).css("outline", "dashed 5px #FFFF")
+        });
+        $("img").mouseout(function(){
+          $(this).css("outline", "none");
+        });
+      });
+    </script>
+   </head>
+   <body>
+     <div id="container">
+       <header>
+         <h1>Disappearing Images</h1>
+         <p>Ninja to Cat...Click Images to See!</p>
+       </header>
+    <div>
+          <img src="file:///Users/ryanrivard/Desktop/DojoAssignments/WebFundamentals/Javascript/JQuery/ninja0.png" data-alt-src="file:///Users/ryanrivard/Desktop/DojoAssignments/WebFundamentals/Javascript/JQuery/cat0.png">
+          <img src="file:///Users/ryanrivard/Desktop/DojoAssignments/WebFundamentals/Javascript/JQuery/ninja1.png" data-alt-src="file:///Users/ryanrivard/Desktop/DojoAssignments/WebFundamentals/Javascript/JQuery/cat1.png">
+          <img src="file:///Users/ryanrivard/Desktop/DojoAssignments/WebFundamentals/Javascript/JQuery/ninja2.png" data-alt-src="file:///Users/ryanrivard/Desktop/DojoAssignments/WebFundamentals/Javascript/JQuery/cat2.png">
+          <img src="file:///Users/ryanrivard/Desktop/DojoAssignments/WebFundamentals/Javascript/JQuery/ninja3.png" data-alt-src="file:///Users/ryanrivard/Desktop/DojoAssignments/WebFundamentals/Javascript/JQuery/cat3.png">
+          <img src="file:///Users/ryanrivard/Desktop/DojoAssignments/WebFundamentals/Javascript/JQuery/ninja4.png" data-alt-src="file:///Users/ryanrivard/Desktop/DojoAssignments/WebFundamentals/Javascript/JQuery/cat4.png">
+    </div>
+    </div>
+  </body>
+</html>

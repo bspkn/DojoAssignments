@@ -1,0 +1,35 @@
+/*CSS reset settings here*/
+{
+ margin: 0px;
+ padding: 0px;
+ outline: 2px dotted red;
+}
+header{
+  width: 970px;
+  margin: 0 auto;
+  background-color: black;
+}
+header p{
+  font-style: oblique;
+  font-family: cursive;
+  color: white;
+  text-align: center;
+}
+h1{
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+}
+#container{
+  background-color: #265175;
+  width: 970px;
+  height: 950px;
+  position: relative;
+}
+img{
+  display: block;
+  margin: auto;
+  width: 50%;
+  border: 1px solid red;
+}
